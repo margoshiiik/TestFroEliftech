@@ -1,29 +1,3 @@
-/* 
-
-    todo: 
-
-    1. save banks
-    3. readMe
-
-    additional: 
-    1. you sure you want to delete? //DONE
-    2. sorting 
-    3. alert //DONE
-
-    
-    done:
-    1. validation function
-    2. delete button 
-    3. add button
-    4. change button 
-    5. add loanTerm
-    2. field for count 
-    
-
-
-
-*/
-
 let bankArray = []; 
 
 
