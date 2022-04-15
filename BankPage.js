@@ -314,7 +314,7 @@ function countMorgage(){
         let r = bank.interestRate / 100 / 12; 
         monthlyPayments = (r * initialLoan * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
 
-        swal(monthlyPayments.toFixed(2), 'This is your monthly payment!', 'success')
+        swal(monthlyPayments.toFixed(2) + '$', 'This is your monthly payment!', 'success')
     }
     
     console.log(monthlyPayments); 
