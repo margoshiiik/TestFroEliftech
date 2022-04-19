@@ -1,3 +1,29 @@
+/* 
+
+    todo: 
+
+    1. save banks
+    3. readMe
+
+    additional: 
+    1. you sure you want to delete? //DONE
+    2. sorting 
+    3. alert //DONE
+
+    
+    done:
+    1. validation function
+    2. delete button 
+    3. add button
+    4. change button 
+    5. add loanTerm
+    2. field for count 
+    
+
+
+
+*/
+
 let bankArray = []; 
 
 
@@ -286,11 +312,12 @@ function countMorgage(){
     else { 
         let n = bank.loanTerm * 12; 
         let r = bank.interestRate / 100 / 12; 
-        monthlyPayments = (r * initialLoan * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
+        let money = initialLoan - downPayment; 
+        monthlyPayments = (r * money * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
 
         swal(monthlyPayments.toFixed(2) + '$', 'This is your monthly payment!', 'success')
     }
-    
+
     console.log(monthlyPayments); 
 
     
